@@ -1,17 +1,16 @@
-import React from "react";
+import React, { Component } from 'react'
 
- // function Board(props) {
-//   return <div className="wrapper">{props.children}</div>;
-// }
 
- function Bookshelf(props) {
-  return <div className="container">
-    <div className="row">
+class Bookshelf extends Component {
 
- {props.children}
-
-     </div>
-  </div>;
+  render(props) {
+    return (
+      <div className="container">
+        <div className="row">
+        {props.children}
+        </div>
+      </div>
+);
 }
-
+}
  export default Bookshelf;

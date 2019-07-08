@@ -1,15 +1,20 @@
 import React from "react";
-import Bookshelf from "./components/Bookshelf";
-import Bookcard from "./components/Bookcard";
-import Jumbotron from "./components/Jumbotron";
+import Bookshelf from "./Components/Bookshelf";
+import Bookcard from "./Components/Bookcard";
+import Jumbotron from "./Components/Jumbotron";
+import Navbar from "./Components/Navbar";
+
 
 function App() {
   return (
       <div>
+        <Navbar/>
         <Jumbotron/>
-        <Board>
-
-        </Board>
+          <Bookshelf>
+            
+            <Bookcard/>
+            
+          </Bookshelf>
       </div>
   );
 }
